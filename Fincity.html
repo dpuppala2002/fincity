@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>your name - Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <nav>
+            <button onclick="navigateTo('about')">About</button>
+            <button onclick="navigateTo('projects')">Projects</button>
+            <button onclick="navigateTo('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        Deekshitha, Andhrapradesh
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <button onclick="showProjectForm()">Add Project</button>
+        <div id="projects-view">
+            <!-- Display added projects dynamically here -->
+        </div>
+        <div id="project-form" style="display: none;">
+            <!-- Project form goes here -->
+            <button onclick="addProject()">Add</button>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+    </section>
+
+    <footer>
+        <button onclick="openLinkedIn()">LinkedIn</button>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
